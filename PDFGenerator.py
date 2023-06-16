@@ -283,15 +283,15 @@ def generate_pdf_gui():
 
     root = Tk()
     root.title("Generate PDF")
-    root.geometry("500x800")
+    root.geometry("500x600")
 
     # Increase the font size for labels and entry fields
-    font_size = 30
+    font_size = 18
 
     fornitore_label = Label(root, text="Fornitore:", font=("Times New Roman", font_size,))
     fornitore_label.pack()
     fornitore_combobox = Combobox(root, values=["EuropaElettronica", "Fogliani", "Carboni", "ElettroMeccanica2B", "CDM", "Comet", "Tecnomat", "Socfeder"], font=("Times New Roman", font_size))
-    fornitore_combobox.config(height=200, width=30)  # Increase combobox height and width
+    fornitore_combobox.config(height=200, width=20)  # Increase combobox height and width
     fornitore_combobox.pack()
 
     #No menu tendina
